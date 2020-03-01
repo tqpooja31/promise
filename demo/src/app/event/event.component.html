@@ -1,0 +1,45 @@
+
+                   <!-- *****1 way binding***** -->
+              <!-- event binding (html-ts)  -->
+
+
+<table border="1" style="border-collapse:collapse">
+    <!-- <tr>
+        <th [attr.colspan]='cols'>emp details</th>
+        <!--<th attr.colspan={{cols}}>emp details /{{title}}</th>
+    </tr> -->
+    <tr>
+        <th>name</th>
+        <td>{{fname}}</td>
+    </tr>
+    <tr>
+            <th>lname</th>
+            <td>{{lname}}</td>
+        </tr>
+        <tr *ngIf="showdetails">
+            <th>age</th>
+            <td>{{age}}</td>
+        </tr>
+        <tr *ngIf="showdetails">
+            <th>gender</th>
+            <td>{{gender}}</td>
+        </tr>
+</table> 
+ <br>
+<!-- <button on-click="toggle()"> -->
+<button (click) ="toggle()">
+    {{showdetails?'hide':'show'}} details
+</button>
+
+<br>
+
+              <!-- 2 way binding -->
+
+<br>
+<input type="text" [value]='fname' (input)='fname=$event.target.value'>
+you have entered : {{fname}}
+
+<br><br>
+
+<input type="text" [(ngModel)]='lname'>
+you have entered : {{lname}}

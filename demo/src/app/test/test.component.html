@@ -1,0 +1,23 @@
+
+           <!-- one way binding (ts-html) -->
+                 <!-- *****class binding***** -->
+
+
+<!-- test component emp.css file to emp.html file -->
+<h1 class="text-success">hello employee....!</h1>
+
+<!-- it is class binding property -->
+<h1 [class]="danger">hello.....!</h1>
+<h1 bind-class="danger">hellooooo!</h1>
+<!-- 
+first preffernce in class binding not a simple class -->
+<h1 class="text-special"  [class]="danger">pooja</h1>
+
+<!-- check if error is true the apply red color and if error is false then not apply color to text 
+ conditionally apply one class -->
+<h1 [class.text-danger]='iserror'>i am having error</h1>
+
+
+<!-- it is multiple classes binding -->
+<h1 [ngClass]="mulclass">i am multiple class</h1>
+

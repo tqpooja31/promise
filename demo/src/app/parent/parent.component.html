@@ -1,0 +1,9 @@
+<span>Present :{{Present}}</span>
+<span>Absent :{{Absent}}</span>
+
+<app-child *ngFor="let s of Students"
+    [name]='s' 
+    (Attendance)=parentm($event)>
+
+
+</app-child>

@@ -1,0 +1,30 @@
+                        
+                        
+                        
+                        <!-- style binding -->
+
+<h2 style="color:red">hello i am pooja</h2>
+
+<!-- define property and value in there the double quote use -->
+<h2 [style.color]="'green'">hello i am pooja</h2>
+
+<!-- declare highlight variable in ts file and define varibale in html file -->
+<h2 [style.color]='highlight'> hellooooooo!!!!</h2>
+
+
+ <h2 [style.color]="iserror?'red':'green'">i am error</h2>
+
+<h2 [ngStyle]="mulstyle">i am multiple style</h2> 
+
+<!-- Attribute binding -->
+<input type="text" id="input" value="pooja">
+
+                            <!-- *****structural diractive***** -->
+<h1 *ngIf="true; else may_batch">i am visible</h1>
+<ng-template #may_batch>
+    <div>i am else block</div>
+</ng-template>
+
+<h1 *ngIf="false;then a;else b"></h1>
+<ng-template #a>i am in then</ng-template>
+<ng-template #b>i am in else</ng-template> 
